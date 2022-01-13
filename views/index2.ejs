@@ -55,7 +55,7 @@
           name="selectpicker">
           <optgroup label="Select Map">
             <!-- <option value="" selected disabled>Select station</option> -->
-            <option value="Select Station" selected disabled hidden>Select Station</option>
+            <option value="Select Station" selected disabled hidden>Select City</option>
             <option name="table1" value="Vice City">Vice City</option>
             <option name="table2" value="Delhi City">Delhi City</option>
           </optgroup>
@@ -96,7 +96,7 @@
 
   <div class="im">
 
-
+    <p>Selected City: <%= imgsrc %></p>
     <% if(imgsrc=="Vice City" ) { %>
       <img src="/images/vicecity.jpg" style="width: 50%;" />
 

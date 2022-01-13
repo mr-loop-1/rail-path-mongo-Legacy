@@ -104,12 +104,19 @@ body {
  
  div.im img {
    margin-left: 5%;
-   margin-top: 10px;
+   margin-top: 5px;
    width: 55%;
    border: 3px solid #253250;
    transition: transform .5s ease;
    box-shadow: -6px 6px 0 1px #8b8282;
    display: inline-block;
+ }
+
+ div.im p {
+  margin-left: 5%;
+  margin-top: 10px;
+  color: #253250;
+  font-weight: bold;
  }
  
  
