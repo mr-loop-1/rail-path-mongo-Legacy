@@ -1,63 +1,87 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>hello</title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
+
+<head>
+  <title>hello</title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
 
 
 
-  <body onload="popu(<%= JSON.stringify(coun) %>);">
+<body onload="popu(<%= JSON.stringify(coun) %>);">
+
+  <header>
+
+
+  </header>
+
+  <div class="titl">
+    Metro Rail Path<br>
+    <p>
+      This is a metro map path generator based on the selected options.
+      <br>On the back, it is powered by a Mongodb Database hosted on
+      Mongodb <br>Atlas and management of all data right from the Database
+      <br> makes it highly scalable.
+    </p>
+
+
+    <div class="intro">
+      <p>
+        Made with -Speed- by<br>
+        <span style="font-size: 30px;">Abdul Samad</span><br>
+        The maps are outsourced<br> from <a href="https://dinopoloclub.com/games/mini-metro/">
+          Mini Metro
+        </a> game and I will<br>make and add custom maps time-to-time.
+      </p>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+  <div class="myforms">
 
     <form action="/users/details" method="POST" id="cform" onSubmit="return fieldCheck();">
       <fieldset>
-      <select required class="selectpicker" id="collec" data-style="btn-info" name="selectpicker">
-        <optgroup label="Select Map">
+        <select required class="picker btn btn-secondary dropdown-toggle" id="collec" data-style="btn-info"
+          name="selectpicker">
+          <optgroup label="Select Map">
             <!-- <option value="" selected disabled>Select station</option> -->
             <option value="Select Station" selected disabled hidden>Select Station</option>
             <option name="table1" value="Vice City">Vice City</option>
             <option name="table2" value="Delhi City">Delhi City</option>
-        </optgroup> 
+          </optgroup>
         </select>
-        
-      <input type="submit" id="submit-form" />
+
+        <input type="submit" id="submit-form" />
       </fieldset>
-  </form>
+    </form>
 
 
 
 
-<form action="/users/query" method="POST">
-  <fieldset>
+    <form action="/users/query" method="POST" id="sform">
+      <fieldset>
 
-    <select required id="selectNumber" class="selectpicker1" name="selectpicker1">
-      <option disabled>Choose a number</option>
-    </select>
+        <select required id="selectNumber" class="picker1 btn btn-secondary dropdown-toggle" name="selectpicker1">
+          <option disabled>Choose a number</option>
+        </select>
 
-    <select required id="selectNumber2" class="selectpicker2" name="selectpicker2">
-      <option disabled>Choose a number</option>
-    </select>
+        <select required id="selectNumber2" class="picker2 btn btn-secondary dropdown-toggle" name="selectpicker2">
+          <option disabled>Choose a number</option>
+        </select>
 
-  <input type="submit" id="submit-form" />
-  </fieldset>
-</form>
+        <input type="submit" id="submit-form" />
+      </fieldset>
+    </form>
 
-
-
-
-<%
-                      if(userdataa.length!=0){
-                        userdataa.forEach(function(data){
-                      %>
-                      <i class="fa fa-arrow-down"></i><br>
-                          <i class="fas fa-subway" style="color:#000000"></i><b>&nbsp;<%=data %></b>
-                          <br>
-                      <%  }) %>
-                      <% } else{ %>
-                          <tr>
-                              <td colspan="7">No Data Found</td>
-                          </tr>
-                      <% } %>
+  </div>
 
 
 
@@ -67,19 +91,39 @@
 
 
 
-
-  <% if(imgsrc == "Vice City") { %>
-    <img src = "/images/vicecity.jpg" style="width: 50%;" />
-
-  <% } else if(imgsrc == 'Delhi City') { %>
-    
-      <img src = "/images/delhicity.jpg" style="width: 50%;" />
-  <% } %>
+  <div class="im">
 
 
-  
+    <% if(imgsrc=="Vice City" ) { %>
+      <img src="/images/vicecity.jpg" style="width: 50%;" />
 
-  <script src = '/javascripts/populate.js'></script>
-  <script src = '/javascripts/field.js'></script>
-  </body>
+      <% } else if(imgsrc=='Delhi City' ) { %>
+
+        <img src="/images/delhicity.jpg" style="width: 50%;" />
+        <% } %>
+
+  </div>
+  <div class="path">
+    <% if(userdataa.length!=0){ userdataa.forEach(function(data){ %>
+      <i class="fa fa-arrow-down"></i>
+      <i class="fas fa-subway" style="color:#000000"></i><p>
+        <%=data %>
+      </p>
+      <% }) %>
+        <% } else{ %>
+          <tr>
+            <td colspan="7">No Data Found</td>
+          </tr>
+          <% } %>
+
+  </div>
+
+  <footer>
+
+  </footer>
+
+  <script src='/javascripts/populate.js'></script>
+  <script src='/javascripts/field.js'></script>
+</body>
+
 </html>
