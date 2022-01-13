@@ -2,7 +2,7 @@
 
 **Note: The Mongodb database may refuse to connect sometimes. I am finding a fix for that**
 
-This is a Metro Rail Path Finder app. It sources its data from Mongodb Atlas Database.
+This is a Metro Rail Path Finder app I made for Dev.to + MongoDb Atlas Hackathon. It sources its data from Mongodb Atlas Database.
 
 Technology Used: Expressjs, MongoDb Atlas
 
