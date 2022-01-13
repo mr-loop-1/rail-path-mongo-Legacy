@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>hello</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+
+
+
+  <body onload="popu(<%= JSON.stringify(coun) %>);">
+
+    <form action="/users/details" method="POST" id="cform" onSubmit="return fieldCheck();">
+      <fieldset>
+      <select required class="selectpicker" id="collec" data-style="btn-info" name="selectpicker">
+        <optgroup label="Select Map">
+            <!-- <option value="" selected disabled>Select station</option> -->
+            <option value="Select Station" selected disabled hidden>Select Station</option>
+            <option name="table1" value="Vice City">Vice City</option>
+            <option name="table2" value="Delhi City">Delhi City</option>
+        </optgroup> 
+        </select>
+        
+      <input type="submit" id="submit-form" />
+      </fieldset>
+  </form>
+
+
+
+
+<form action="/users/query" method="POST">
+  <fieldset>
+
+    <select required id="selectNumber" class="selectpicker1" name="selectpicker1">
+      <option disabled>Choose a number</option>
+    </select>
+
+    <select required id="selectNumber2" class="selectpicker2" name="selectpicker2">
+      <option disabled>Choose a number</option>
+    </select>
+
+  <input type="submit" id="submit-form" />
+  </fieldset>
+</form>
+
+
+
+
+<%
+                      if(userdataa.length!=0){
+                        userdataa.forEach(function(data){
+                      %>
+                      <i class="fa fa-arrow-down"></i><br>
+                          <i class="fas fa-subway" style="color:#000000"></i><b>&nbsp;<%=data %></b>
+                          <br>
+                      <%  }) %>
+                      <% } else{ %>
+                          <tr>
+                              <td colspan="7">No Data Found</td>
+                          </tr>
+                      <% } %>
+
+
+
+
+
+
+
+
+
+
+  <% if(imgsrc == "Vice City") { %>
+    <img src = "/images/vicecity.jpg" style="width: 50%;" />
+
+  <% } else if(imgsrc == 'Delhi City') { %>
+    
+      <img src = "/images/delhicity.jpg" style="width: 50%;" />
+  <% } %>
+
+
+  
+
+  <script src = '/javascripts/populate.js'></script>
+  <script src = '/javascripts/field.js'></script>
+  </body>
+</html>
