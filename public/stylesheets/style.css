@@ -1,11 +1,8 @@
 
 body {
-  /* padding: 50px;  */
    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
    margin : 0;
    padding: 0;
- /*  background: transparent url(../images/body-bg.png) 0 0 repeat; */
-   
  }
  
  header {
@@ -28,7 +25,7 @@ body {
    font-size: 20px;
  }
  .intro {
-   margin-top: -150px;
+   margin-top: -180px;
    margin-right: 6%;
    float: right;
    text-align: center;
@@ -95,6 +92,7 @@ body {
  }
  
  div.path p {
+   margin-top:10px;
    font-weight: bold;
    color: #253250;
    font-size: 1.3em;
@@ -122,9 +120,3 @@ body {
    height: 20px;
    color:rgba(255, 255, 255, 0.8);
  }
- 
- /*
- .im div:hover img {
-   transform: scale(1.4);
- }
- */

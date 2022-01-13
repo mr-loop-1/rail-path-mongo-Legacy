@@ -6,6 +6,7 @@
   <link rel='stylesheet' href='/stylesheets/style.css' />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
 </head>
 
 
@@ -31,9 +32,10 @@
       <p>
         Made with -Speed- by<br>
         <span style="font-size: 30px;">Abdul Samad</span><br>
-        The maps are outsourced<br> from <a href="https://dinopoloclub.com/games/mini-metro/">
-          Mini Metro
-        </a> game and I will<br>make and add custom maps time-to-time.
+        The maps are outsourced<br> from Mini Metro 
+        <a href="https://dinopoloclub.com/games/mini-metro/">
+          <i class="fas fa-sign-out-alt"></i>
+        </a> and I will<br>make and add custom maps time-to-time.
       </p>
     </div>
   </div>
@@ -68,13 +70,14 @@
 
     <form action="/users/query" method="POST" id="sform">
       <fieldset>
+        <p>Select the start and destination stations</p>
 
         <select required id="selectNumber" class="picker1 btn btn-secondary dropdown-toggle" name="selectpicker1">
-          <option disabled>Choose a number</option>
+          <option disabled>Boarding</option>
         </select>
 
         <select required id="selectNumber2" class="picker2 btn btn-secondary dropdown-toggle" name="selectpicker2">
-          <option disabled>Choose a number</option>
+          <option disabled>Destination</option>
         </select>
 
         <input type="submit" id="submit-form" />
@@ -105,15 +108,14 @@
   </div>
   <div class="path">
     <% if(userdataa.length!=0){ userdataa.forEach(function(data){ %>
-      <i class="fa fa-arrow-down"></i>
-      <i class="fas fa-subway" style="color:#000000"></i><p>
+      
+      <p>
+        <i class="fas fa-subway" style="color:#253250"></i>
         <%=data %>
       </p>
       <% }) %>
         <% } else{ %>
-          <tr>
-            <td colspan="7">No Data Found</td>
-          </tr>
+          <p>Select Stations to<br>calculate path</p>
           <% } %>
 
   </div>

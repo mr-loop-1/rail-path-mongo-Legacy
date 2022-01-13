@@ -5,8 +5,6 @@ function fieldCheck() {
     }
     else {
         alert("Select a city first!!");
-       // event.preventDefault();
-       // document.getElementById('userform').reset();
         return false;
     }
 }
