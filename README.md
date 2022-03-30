@@ -4,11 +4,13 @@
 > 
 > Hosted at - https://metroroute.herokuapp.com/
 
-**Note: The Mongodb database may refuse to connect sometimes. I am finding a fix for that**
 
 This is a Metro Rail Path Finder app I made for Dev.to + MongoDb Atlas Hackathon. It sources its data from Mongodb Atlas Database.
 
 Technology Used: Expressjs, MongoDb Atlas
+
+## Golden Point
+#### Entire path calculation is done in an indepndent MongoDb script **(/routes/mongo.js)** which just requires that the database be according to a simple template.
 
 ## To run the app
 Just make sure that node and npm are installed and 
