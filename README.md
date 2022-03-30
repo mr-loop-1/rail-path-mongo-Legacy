@@ -10,7 +10,7 @@ This is a Metro Rail Path Finder app I made for Dev.to + MongoDb Atlas Hackathon
 Technology Used: Expressjs, MongoDb Atlas
 
 ## Golden Point
-#### Entire path calculation is done in an indepndent MongoDb script **(/routes/mongo.js)** which just requires that the database be according to a simple template.
+#### Entire path calculation is done in an indepndent MongoDb script **(/routes/mongo.js)** which just requires that the database be according to a simple template (/template_Database.txt).
 
 ## To run the app
 Just make sure that node and npm are installed and 
