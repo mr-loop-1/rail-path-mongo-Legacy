@@ -1,0 +1,100 @@
+{
+    "_id": 1,
+    "Name": "Forest Hills",
+    "Link": [2]
+}
+{
+    "_id": 2,
+    "Name": "Downtown",
+    "Link": [1,3]
+}
+{
+    "_id": 3,
+    "Name": "Vice Port",
+    "Link": [2,4]
+}
+{
+    "_id": 4,
+    "Name": "Airport",
+    "Link": [5,9,10,11]
+}
+{
+    "_id": 5,
+    "Name": "Food Street",
+    "Link": [4,6,8]
+}
+{
+    "_id": 6,
+    "Name": "Ocean Beach",
+    "Link": [5,7]
+}
+{
+    "_id": 7,
+    "Name": "Little Haiti",
+    "Link": [6]
+}
+{
+    "_id": 8,
+    "Name": "Grand Library",
+    "Link": [5]
+}
+{
+    "_id": 9,
+    "Name": "Prawn Island",
+    "Link": [4]
+}
+{
+    "_id": 10,
+    "Name": "Vice City Beach",
+    "Link": [4]
+}
+{
+    "_id": 11,
+    "Name": "Shipyard",
+    "Link": [4,12,16]
+}
+{
+    "_id": 12,
+    "Name": "Leaf Links",
+    "Link": [11,13]
+}
+{
+    "_id": 13,
+    "Name": "City Scrap",
+    "Link": [12,14]
+}
+{
+    "_id": 14,
+    "Name": "New Downtown",
+    "Link": [13,15]
+}
+{
+    "_id": 15,
+    "Name": "Subways",
+    "Link": [14]
+}
+{
+    "_id": 16,
+    "Name": "Old City",
+    "Link": [11, 17]
+}
+{
+    "_id": 17,
+    "Name": "Star City",
+    "Link": [16, 18, 19]
+}
+{
+    "_id": 18,
+    "Name": "Trench",
+    "Link": [17]
+}
+{
+    "_id": 19,
+    "Name": "Govt. Office",
+    "Link": [17, 20]
+}
+{
+    "_id": 20,
+    "Name": "Sheep Village",
+    "Link": [19]
+}
