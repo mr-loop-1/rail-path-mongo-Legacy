@@ -1,0 +1,166 @@
+{
+    "_id": 101,
+    "Name": "Forest Hills",
+    "Link": [104],
+    "color": {
+      "Dark Green": 1
+    }
+},
+{
+    "_id": 102,
+    "Name": "Downtown",
+    "Link": [104],
+    "color": {
+      "Dark Green": 2
+    }
+},
+{
+    "_id": 103,
+    "Name": "Vice Port",
+    "Link": [104],
+    "color": {
+      "Dark Green": 3
+    }
+},
+{
+    "_id": 104,
+    "Name": "Airport",
+    "Link": [105, 109],
+    "color": {
+      "Dark Green": 4,
+      "Yellow": 4,
+      "Red": 3
+    }
+},
+{
+    "_id": 105,
+    "Name": "Food Street",
+    "Link": [104],
+    "color": {
+      "Yellow": 3,
+      "Red": 2
+    }
+},
+{
+    "_id": 106,
+    "Name": "Ocean Beach",
+    "Link": [105],
+    "color": {
+      "Yellow": 2
+    }
+},
+{
+    "_id": 107,
+    "Name": "Little Haiti",
+    "Link": [105],
+    "color": {
+      "Yellow": 1
+    }
+},
+{
+    "_id": 108,
+    "Name": "Prawn Island",
+    "Link": [105],
+    "color": {
+      "Yellow": 2
+    }
+},
+{
+    "_id": 109,
+    "Name": "Shipyard",
+    "Link": [104, 115],
+    "color": {
+      "Green": 5,
+      "Red": 4
+    }
+},
+{
+    "_id": 110,
+    "Name": "Leaf Links",
+    "Link": [109],
+    "color": {
+      "Green": 4
+    }
+},
+{
+    "_id": 111,
+    "Name": "City Scrap",
+    "Link": [109],
+    "color": {
+      "Green": 3
+    }
+},
+{
+    "_id": 112,
+    "Name": "New Downtown",
+    "Link": [109],
+    "color": {
+      "Green": 2
+    }
+},
+{
+    "_id": 113,
+    "Name": "Subways",
+    "Link": [109],
+    "color": {
+      "Green": 1
+    }
+},
+{
+    "_id": 114,
+    "Name": "Old City",
+    "Link": [109, 115],
+    "color": {
+      "Red": 5
+    }
+},
+{
+    "_id": 115,
+    "Name": "Star City",
+    "Link": [109],
+    "color": {
+      "Red": 6,
+      "Brown": 2
+    }
+},
+{
+    "_id": 116,
+    "Name": "Trench",
+    "Link": [115],
+    "color": {
+      "Brown": 1
+    }
+},
+{
+    "_id": 117,
+    "Name": "Govt Office",
+    "Link": [115],
+    "color": {
+      "Brown": 3
+    }
+},
+{
+    "_id": 118,
+    "Name": "Sheep Village",
+    "Link": [115],
+    "color": {
+      "Brown": 4
+    }
+},
+{
+    "_id": 119,
+    "Name": "Grand Library",
+    "Link": [105],
+    "color": {
+      "Red": 1
+    }
+},
+{
+    "_id": 120,
+    "Name": "Vice City Beach",
+    "Link": [104],
+    "color": {
+      "Dark Green": 5
+    }
+}
+

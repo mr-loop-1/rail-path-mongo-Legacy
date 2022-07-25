@@ -1,0 +1,346 @@
+[{
+    "_id": 101,
+    "Name": "Hindon River",
+    "Link": [103],
+    "color": {
+      "Yellow": 1
+    }
+},
+{
+    "_id": 102,
+    "Name": "Dilshad Garden",
+    "Link": [103],
+    "color": {
+      "Yellow": 2
+    }
+},
+{
+    "_id": 103,
+    "Name": "Cantonment",
+    "Link": [106],
+    "color": {
+      "Yellow": 3,
+      "Green": 1
+    }
+},
+{
+    "_id": 104,
+    "Name": "IIT Delhi",
+    "Link": [103, 106],
+    "color": {
+      "Yellow": 4
+    }
+},
+{
+    "_id": 105,
+    "Name": "Preet Vihar",
+    "Link": [103, 106],
+    "color": {
+      "Yellow": 5
+    }
+},
+{
+    "_id": 106,
+    "Name": "Secretariat",
+    "Link": [103, 108, 119],
+    "color": {
+      "Yellow": 6,
+      "Green": 5
+    }
+},
+{
+    "_id": 107,
+    "Name": "Supreme Court",
+    "Link": [106, 108],
+    "color": {
+      "Yellow": 7
+    }
+},
+{
+    "_id": 108,
+    "Name": "New Delhi",
+    "Link": [106, 109, 129, 130],
+    "color": {
+      "Yellow": 8,
+      "Red": 5
+    }
+},
+{
+    "_id": 109,
+    "Name": "Lal Qila",
+    "Link": [108, 112, 129, 130],
+    "color": {
+      "Yellow": 9,
+      "Blue": 8
+    }
+},
+{
+    "_id": 110,
+    "Name": "Jama Masjid",
+    "Link": [109, 112],
+    "color": {
+      "Yellow": 10
+    }
+},
+{
+    "_id": 111,
+    "Name": "Nehru Place",
+    "Link": [109, 112],
+    "color": {
+      "Yellow": 11
+    }
+},
+{
+    "_id": 112,
+    "Name": "Jamia Millia Islamia",
+    "Link": [109, 113, 129],
+    "color": {
+      "Yellow": 12,
+      "Red": 10
+    }
+},
+{
+    "_id": 113,
+    "Name": "Civil Lines",
+    "Link": [112],
+    "color": {
+      "Yellow": 13,
+      "Red": 11
+    }
+},
+{
+    "_id": 114,
+    "Name": "Electronic City",
+    "Link": [113],
+    "color": {
+      "Yellow": 14
+    }
+},
+{
+    "_id": 115,
+    "Name": "Noida City",
+    "Link": [113],
+    "color": {
+      "Yellow": 15
+    }
+},
+{
+    "_id": 116,
+    "Name": "Janpath",
+    "Link": [103, 106],
+    "color": {
+      "Green": 2
+    }
+},
+{
+    "_id": 117,
+    "Name": "Hauz Khas",
+    "Link": [103, 106],
+    "color": {
+      "Green": 3
+    }
+},
+{
+    "_id": 118,
+    "Name": "Airport",
+    "Link": [103, 106],
+    "color": {
+      "Green": 4
+    }
+},
+{
+    "_id": 119,
+    "Name": "Kashmere Gate",
+    "Link": [106, 121],
+    "color": {
+      "Green": 6,
+      "Blue": 14
+    }
+},
+{
+    "_id": 120,
+    "Name": "Rajendra Place",
+    "Link": [119, 121],
+    "color": {
+      "Green": 7
+    }
+},
+{
+    "_id": 121,
+    "Name": "Chandni Chowk",
+    "Link": [119, 130],
+    "color": {
+      "Green": 8,
+      "Blue": 11
+    }
+},
+{
+    "_id": 122,
+    "Name": "Kaushambi",
+    "Link": [121],
+    "color": {
+      "Green": 9
+    }
+},
+{
+    "_id": 123,
+    "Name": "Dwarka",
+    "Link": [129],
+    "color": {
+      "Blue": 1
+    }
+},
+{
+    "_id": 124,
+    "Name": "Model Town",
+    "Link": [129],
+    "color": {
+      "Blue": 2
+    }
+},
+{
+    "_id": 125,
+    "Name": "Rohini West",
+    "Link": [129],
+    "color": {
+      "Blue": 3
+    }
+},
+{
+    "_id": 126,
+    "Name": "Shastri Nagar",
+    "Link": [129],
+    "color": {
+      "Blue": 4
+    }
+},
+{
+    "_id": 127,
+    "Name": "Golf Course",
+    "Link": [129],
+    "color": {
+      "Blue": 5
+    }
+},
+{
+    "_id": 128,
+    "Name": "Inderlok",
+    "Link": [129],
+    "color": {
+      "Blue": 6
+    }
+},
+{
+    "_id": 129,
+    "Name": "ITO",
+    "Link": [108, 109, 112],
+    "color": {
+      "Blue": 7,
+      "Red": 6
+    }
+},
+{
+    "_id": 130,
+    "Name": "Kirti Nagar",
+    "Link": [108, 109, 121],
+    "color": {
+      "Blue": 9,
+      "Red": 3
+    }
+},
+{
+    "_id": 131,
+    "Name": "Udyog Nagar",
+    "Link": [119, 121],
+    "color": {
+      "Blue": 12
+    }
+},
+{
+    "_id": 132,
+    "Name": "Mayur Vihar",
+    "Link": [119, 121],
+    "color": {
+      "Blue": 13
+    }
+},
+{
+    "_id": 133,
+    "Name": "Vaishali",
+    "Link": [130],
+    "color": {
+      "Red": 1
+    }
+},
+{
+    "_id": 134,
+    "Name": "Anand Vihar",
+    "Link": [130],
+    "color": {
+      "Red": 2
+    }
+},
+{
+    "_id": 135,
+    "Name": "AIIMS",
+    "Link": [108, 130],
+    "color": {
+      "Red": 4
+    }
+},
+{
+    "_id": 136,
+    "Name": "Delhi Gate",
+    "Link": [112, 129],
+    "color": {
+      "Red": 7
+    }
+},
+{
+    "_id": 137,
+    "Name": "Okhla NSIC",
+    "Link": [112, 129],
+    "color": {
+      "Red": 8
+    }
+},
+{
+    "_id": 138,
+    "Name": "Botanical Garden",
+    "Link": [112, 129],
+    "color": {
+      "Red": 9
+    }
+},
+{
+    "_id": 139,
+    "Name": "Yamuna Bank",
+    "Link": [113],
+    "color": {
+      "Red": 12
+    }
+},
+{
+    "_id": 140,
+    "Name": "Mandi House",
+    "Link": [113],
+    "color": {
+      "Red": 13
+    }
+},
+{
+    "_id": 141,
+    "Name": "South Extension",
+    "Link": [113],
+    "color": {
+      "Red": 14
+    }
+},
+{
+    "_id": 142,
+    "Name": "Karol Bagh",
+    "Link": [121, 130],
+    "color": {
+      "Blue": 10
+    }
+}]

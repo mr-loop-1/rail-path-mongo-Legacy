@@ -1,0 +1,129 @@
+
+body {
+   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+   margin : 0;
+   padding: 0;
+ }
+ 
+ header {
+   position: relative;
+   top: 0px;
+   background-color:rgb(0, 0, 0);
+   margin-bottom: 20px;
+   color: white;
+   width: 100%;
+   height: 15px;
+ }
+ 
+ .titl{
+   margin-left: 5%;
+   margin-bottom: 150px;
+   font-weight: bold;
+   font-size: 60px;
+ }
+ .titl p{
+   font-size: 20px;
+ }
+ .intro {
+   margin-top: -180px;
+   margin-right: 6%;
+   float: right;
+   text-align: center;
+ }
+ 
+ 
+ .md-main {
+   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+ }
+ 
+ 
+ 
+ .myforms {
+   margin-left: 2%;
+   margin-top: 10px;
+   width: 55%;
+   margin-bottom: 40px;
+ }
+ 
+ 
+ #cform fieldset {
+   position: relative;
+   height: 50px;
+ }
+ 
+ #cform fieldset select {
+   width: 45%;
+   margin-left: 10%;
+ }
+ 
+ 
+ 
+ #sform p {
+   margin-top: 10px;
+   margin-bottom: 2px;
+   margin-left: 10%;
+   font-weight: bold;
+ }
+ 
+ #sform fieldset {
+   position: relative
+ }
+ 
+ #sform fieldset select.picker1 {
+   width: 20%;
+   margin-left: 10%;
+ }
+ 
+ #sform fieldset select.picker2 {
+   width: 20%;
+   margin-left: 5%;
+ }
+ 
+ 
+ 
+ div.path {
+   margin-top: -700px;
+   margin-right: 5%;
+   width: 30%;
+   height: 700px;
+   float: right;
+   border: 3px solid #253250;
+   box-shadow: -6px 6px 0 1px #8b8282;
+ }
+ 
+ div.path p {
+   margin-top:10px;
+   font-weight: bold;
+   color: #253250;
+   font-size: 1.3em;
+   text-align: center;
+ }
+ 
+ 
+ 
+ 
+ div.im img {
+   margin-left: 5%;
+   margin-top: 5px;
+   width: 55%;
+   border: 3px solid #253250;
+   transition: transform .5s ease;
+   box-shadow: -6px 6px 0 1px #8b8282;
+   display: inline-block;
+ }
+
+ div.im p {
+  margin-left: 5%;
+  margin-top: 10px;
+  color: #253250;
+  font-weight: bold;
+ }
+ 
+ 
+ footer {
+   margin-top:45px;
+   background-color:rgb(0, 0, 0);
+   width: 100%;
+   height: 20px;
+   color:rgba(255, 255, 255, 0.8);
+ }

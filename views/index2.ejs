@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>hello</title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+</head>
+
+
+
+<body onload="popu(<%= JSON.stringify(coun) %>);">
+
+  <header>
+
+
+  </header>
+
+  <div class="titl">
+    Metro Rail Path<br>
+    <p>
+      This is a metro map path generator based on the selected options.
+      <br>On the back, it is powered by a Mongodb Database hosted on
+      Mongodb <br>Atlas and management of all data right from the Database
+      <br> makes it highly scalable.
+    </p>
+
+
+    <div class="intro">
+      <p>
+        Made with -Speed- by<br>
+        <span style="font-size: 30px;">Abdul Samad</span><br>
+        and I will<br>make and add custom maps time-to-time.
+      </p>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+  <div class="myforms">
+
+    <form action="/users/details" method="POST" id="cform" onSubmit="return fieldCheck();">
+      <fieldset>
+        <select required class="picker btn btn-secondary dropdown-toggle" id="collec" data-style="btn-info"
+          name="selectpicker">
+          <optgroup label="Select Map">
+            <!-- <option value="" selected disabled>Select station</option> -->
+            <option value="Select Station" selected disabled hidden>Select City</option>
+            <option name="table1" value="newVice2">Vice City</option>
+            <option name="table2" value="newDelhi">Delhi City</option>
+          </optgroup>
+        </select>
+
+        <input type="submit" id="submit-form" />
+      </fieldset>
+    </form>
+
+
+
+
+    <form action="/users/query" method="POST" id="sform">
+      <fieldset>
+        <p>Select the start and destination stations</p>
+
+        <select required id="selectNumber" class="picker1 btn btn-secondary dropdown-toggle" name="selectpicker1">
+          <option disabled>Boarding</option>
+        </select>
+
+        <select required id="selectNumber2" class="picker2 btn btn-secondary dropdown-toggle" name="selectpicker2">
+          <option disabled>Destination</option>
+        </select>
+
+        <input type="submit" id="submit-form" />
+      </fieldset>
+    </form>
+
+  </div>
+
+
+
+
+
+
+
+
+
+  <div class="im">
+
+    <p>Selected City: <%= imgsrc %></p>
+    <% if(imgsrc=="newVice2" ) { %>
+      <img src="/images/newVice2.jpg" style="width: 50%;" />
+      
+        <% } else if(imgsrc=='newDelhi' ) { %>
+
+          <img src="/images/newDelhi.jpg" style="width: 50%;" />
+          <% } %>
+
+  </div>
+  <div class="path">
+    <% if(userdataa.length!=0){ userdataa.forEach(function(data){ %>
+      
+      <p>
+        <i class="fas fa-subway" style="color:#253250"></i>
+        <%=data %>
+      </p>
+      <% }) %>
+        <% } else{ %>
+          <p>Select Stations to<br>calculate path</p>
+          <% } %>
+
+  </div>
+
+  <footer>
+
+  </footer>
+
+  <script src='/javascripts/populate.js'></script>
+  <script src='/javascripts/field.js'></script>
+</body>
+
+</html>
